@@ -1,0 +1,7 @@
+<import src="../tpls/movie-list.wxml" />
+<view class='page'>
+  <view class="page-header">
+    <text class="page-header-text">{{subtitle}}</text>
+  </view>
+  <template is="movie-list" data="{{movies, hasMore,loadMore}}" />
+</view>

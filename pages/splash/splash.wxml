@@ -1,0 +1,10 @@
+<!--pages/splash/splash.wxml-->
+<swiper indicator-dots="true"
+      autoplay="true" interval="3000" duration="1000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.images.large}}" class="slide-image" mode='aspectFill'/>
+      <button wx:if="{{index==(imgUrls.length-1)}}" class="btn" bindtap="start">立即体验</button>
+    </swiper-item>
+  </block>
+</swiper>

@@ -1,0 +1,9 @@
+<import src="../tpls/movie-list.wxml" />
+
+<view class="section">
+  <input placeholder="请输入要查询的电影" auto-focus bindinput="bindKeyInput"/>
+  <button type="primary" bindtap="search"> 查询 </button>
+</view>
+<view class='container'>
+  <template is="item1" wx:for="{{movies}}" data="{{item}}" />
+</view>
